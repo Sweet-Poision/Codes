@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 #define SIZE 25
-#define PRINT(X) for(int i = 0; i < SIZE; ++i){ printf("%d ", X + i ); printf("\n"); }
 
 void bubbleSort(int arr[], int n) {
   int i, j;
@@ -16,6 +15,12 @@ void bubbleSort(int arr[], int n) {
   }
 }
 
+void print(int * arr) {
+    for(int i = 0; i < SIZE; ++i) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
 
 void input(int *arr) {
     printf("Enter %d numbers\n ", SIZE);

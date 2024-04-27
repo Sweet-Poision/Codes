@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 #define SIZE 25
-#define PRINT(X) for(int i = 0; i < SIZE; ++i){ printf("%d ", X + i ); printf("\n"); }
 
 
 void insertionSort(int arr[], int n) {
@@ -22,6 +21,13 @@ void input(int *arr) {
     for(int i = 0; i < SIZE; ++i) {
         scanf("%d", arr + i);
     }
+}
+
+void print(int * arr) {
+    for(int i = 0; i < SIZE; ++i) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
 }
 
 int main() {

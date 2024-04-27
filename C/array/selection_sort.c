@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 #define SIZE 25
-#define PRINT(X) for(int i = 0; i < SIZE; ++i){ printf("%d ", X + i ); printf("\n"); }
 
 void selectionSort(int arr[], int n) {
   int i, j, min_idx;
@@ -18,6 +17,13 @@ void selectionSort(int arr[], int n) {
       arr[i] = temp;
     }
   }
+}
+
+void print(int * arr) {
+    for(int i = 0; i < SIZE; ++i) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
 }
 
 void input(int *arr) {
